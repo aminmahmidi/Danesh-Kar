@@ -13,6 +13,7 @@ body {
   width: 200px;
   text-decoration: none;
   position: fixed;
+  z-index: 1;
   .logo-container {
     text-align: center;
     text-transform: capitalize;
@@ -61,9 +62,11 @@ body {
   }
 }
 main {
-  padding: 10px;
+  padding: 20px;
   margin-right: 200px;
   position: relative;
+  text-align: justify;
+  line-height: 30px;
 }
 header {
   display: none;
