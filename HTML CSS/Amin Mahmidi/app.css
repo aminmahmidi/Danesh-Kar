@@ -1,0 +1,125 @@
+* {
+  box-sizing: content-box;
+  font-family: IRANsans;
+}
+
+body {
+  margin: 0;
+  display: flexbox;
+  gap: 20px;
+}
+
+.side-bar {
+  background-color: #efefef;
+  height: 100%;
+  width: 200px;
+  text-decoration: none;
+  position: fixed;
+}
+.side-bar .logo-container {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #7c00fe;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+}
+.side-bar ul {
+  list-style: none;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.side-bar li {
+  list-style: none;
+  display: grid;
+  border-radius: 10px;
+  color: white;
+  margin: 5px 10px;
+  transition: 0.3s;
+}
+.side-bar li:hover {
+  background-color: #d9b5ff;
+}
+.side-bar li:hover i {
+  background-color: #7c00fe;
+  color: white;
+  transition: 0.3s;
+}
+.side-bar li a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  margin: 10px 0px 5px 0px;
+}
+.side-bar li i {
+  background-color: #dcdcdc;
+  color: black;
+  padding: 13px;
+  margin: 0 0px 0 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+main {
+  padding: 10px;
+  margin-right: 200px;
+  position: relative;
+}
+
+header {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    display: unset;
+    gap: 0;
+  }
+  body .logo-container {
+    display: none;
+  }
+  body .side-bar {
+    bottom: 0;
+    height: unset;
+    width: 100%;
+    gap: 0;
+    text-align: center;
+    padding: 2px 0;
+  }
+  body .side-bar li {
+    display: inline-flex;
+    padding: 1px;
+  }
+  body .side-bar li a {
+    font-size: 12px;
+    display: block;
+    width: 80px;
+    text-align: center;
+    padding: 2px;
+  }
+  body .side-bar li i {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto 5px auto;
+  }
+  body main {
+    margin: 0 auto;
+    padding: 30px;
+  }
+  header {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #7c00fe;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+  }
+}/*# sourceMappingURL=app.css.map */
